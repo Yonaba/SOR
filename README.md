@@ -76,7 +76,7 @@ Otherwise, the solver will throw an error.
 You can optionnally modify the solver behaviour before using *SOR.solve()* through these commands.
 
 ##Useful links##
-*  [Wikipedia : Successive Over Relaxation][] http://en.wikipedia.org/wiki/Successive_over-relaxation
+*  [Wikipedia : Successive Over Relaxation][]
   
 ##License##
 This work is under [MIT-LICENSE][]<br/>
