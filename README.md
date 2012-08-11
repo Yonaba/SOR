@@ -69,8 +69,8 @@ Otherwise, the solver will throw an error.
 * *SOR.getAccuracy()* : returns the accuracy.
 * *SOR.setMaxIterations(I)* : the maximum possible iterations allowed to find a solution. Default value is 1E4
 * *SOR.getMaxIterations* : return the number of maximum interations allowed.
-* *SOR.setRelaxation(W)* : value of the relaxation parameter. It has to be a number between 0 and 2, both excluded. By default,value 1.86 will be used.
-* *SOR.getRelaxation* : returns the value of the relaxation parameter.
+* *SOR.setRelaxationParameter(W)* : value of the relaxation parameter. It has to be a number between 0 and 2, both excluded. By default,value 1.86 will be used.
+* *SOR.getRelaxationParameter* : returns the value of the relaxation parameter.
 * *SOR.solve(Matrix)* : Returns a linear solution vector, plus the number of iterations made.
 
 You can optionnally modify the solver behaviour before using *SOR.solve()* through these commands.
