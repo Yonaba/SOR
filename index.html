@@ -17,7 +17,10 @@
       <header>
         <h1>Sor</h1>
         <p>Library for solving linear equation system using Successive Over Relaxation method</p>
+
         <p class="view"><a href="https://github.com/Yonaba/SOR">View the Project on GitHub <small>Yonaba/SOR</small></a></p>
+
+
         <ul>
           <li><a href="https://github.com/Yonaba/SOR/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/Yonaba/SOR/tarball/master">Download <strong>TAR Ball</strong></a></li>
@@ -108,9 +111,9 @@ Otherwise, the solver will throw an error.</p>
 <li>
 <em>SOR.getMaxIterations</em> : return the number of maximum interations allowed.</li>
 <li>
-<em>SOR.setRelaxationParameter(W)</em> : value of the relaxation parameter. It has to be a number between 0 and 2, both excluded. By default,value 1.86 will be used.</li>
+<em>SOR.setRelaxation(W)</em> : value of the relaxation parameter. It has to be a number between 0 and 2, both excluded. By default,value 1.86 will be used.</li>
 <li>
-<em>SOR.getRelaxationParameter</em> : returns the value of the relaxation parameter.</li>
+<em>SOR.getRelaxation</em> : returns the value of the relaxation parameter.</li>
 <li>
 <em>SOR.solve(Matrix)</em> : Returns a linear solution vector, plus the number of iterations made.</li>
 </ul><p>You can optionnally modify the solver behaviour before using <em>SOR.solve()</em> through these commands.</p>
