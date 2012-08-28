@@ -4,13 +4,16 @@ It is written in [Lua][].
 
 ##Usage##
 Place the file 'SOR.lua' inside your project, call it using *require*.
-    
-    local SOR = require ("SOR")
+
+```lua
+local SOR = require ("SOR")
+```
 	
 Now assuming you have to solve this linear system of 16x16 (16 equations, 16 unknown variables).<br/>
 You will have to create a 16x17 matrix representing that system, the 17th column beign the solution vector.
 
-    local matrix = {
+```lua 
+local matrix = {
 					{-4,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,-11},
 					{1,-4,1,0,0,1,0,0,0,0,0,0,0,0,0,0,-3},
 					{0,1,-4,1,0,0,1,0,0,0,0,0,0,0,0,0,-3},
@@ -28,35 +31,40 @@ You will have to create a 16x17 matrix representing that system, the 17th column
 					{0,0,0,0,0,0,0,0,0,0,1,0,0,1,-4,1,-2},
 					{0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,-4,-10},
 				}
+```
 				
 To solve this sytem, use *SOR.solve()*.
 
-    local x, iterations = SOR.solve(matrix)
-    -- displays x-vector:
-    for i,v in ipairs(x) do
-      print(('x[%d] = %f'):format(i,v))
-    end
-    print(('Iterations Made: %d'):format(iterations))
+```lua
+local x, iterations = SOR.solve(matrix)
+-- displays x-vector:
+for i,v in ipairs(x) do
+  print(('x[%d] = %f'):format(i,v))
+end
+print(('Iterations Made: %d'):format(iterations))
+```
 
 The output will be :
 
-    x[1] = 5.454459
-    x[2] = 4.594688
-    x[3] = 4.594679
-    x[4] = 5.454531
-    x[5] = 6.223469
-    x[6] = 5.329580
-    x[7] = 5.329561
-    x[8] = 6.223491
-    x[9] = 6.109833
-    x[10] = 5.170488
-    x[11] = 5.170455
-    x[12] = 6.109845
-    x[13] = 5.045460
-    x[14] = 4.071980
-    x[15] = 4.071964
-    x[16] = 5.045457
-    Iterations Made: 78
+```lua
+-- x[1] = 5.454459
+-- x[2] = 4.594688
+-- x[3] = 4.594679
+-- x[4] = 5.454531
+-- x[5] = 6.223469
+-- x[6] = 5.329580
+-- x[7] = 5.329561
+-- x[8] = 6.223491
+-- x[9] = 6.109833
+-- x[10] = 5.170488
+-- x[11] = 5.170455
+-- x[12] = 6.109845
+-- x[13] = 5.045460
+-- x[14] = 4.071980
+-- x[15] = 4.071964
+-- x[16] = 5.045457
+-- Iterations Made: 78
+```
 
 ##Note##
 Consider that, to have this working the input matrix , with the last column left out, must be [symmetric][] and [diagonally dominant][].<br/>
