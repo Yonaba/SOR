@@ -114,3 +114,6 @@ Copyright (c) 2012 Roland Yonaba
 [symmetric]: http://en.wikipedia.org/wiki/Symmetric_matrix
 [diagonally dominant]: http://en.wikipedia.org/wiki/Diagonally_dominant_matrix
 [MIT-LICENSE]: http://www.opensource.org/licenses/mit-license.php
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Yonaba/sor/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
